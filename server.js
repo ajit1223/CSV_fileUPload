@@ -15,10 +15,11 @@ app.set('views', './views');
 
 app.use('/', require('./routes'));
 
-app.listen(8000, (err) => {
+PORT = 8500;
+app.listen(PORT, (err) => {
     if (err) {
         console.log("Error Connecting to server!!");
         return;
     }
-    console.log("Successfully Connected to Server, 8000!!");
+    console.log(`Successfully Connected to Server, at PORT,`, PORT);
 });
